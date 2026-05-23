@@ -1,68 +1,87 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial;
-    color: #333;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: rgb(101, 171, 124);
+  color: #333;
 }
 
 
 
 /* NAVBAR */
 nav {
-    background-color: #2c3e50;
-    padding: 15px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #2c3e50;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav .logo {
-    color: rgb(246, 16, 16);
-    font-size: 22px;
-    font-weight: bold;
+  color: rgb(246, 16, 16);
+  font-size: 22px;
+  font-weight: bold;
 }
 
 nav a {
-    color: rgb(139, 216, 24);
-    text-decoration: none;
-    margin-left: 20px;
-    font-size: 16px;
+  color: rgb(139, 216, 24);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
 }
 
 nav a:hover {
-    color: #3498db;
+  color: #3498db;
 }
 
 /*ANA İÇERİK */
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #c4ef06 0%, #c70a0a 100%);
+  color: white;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  animation: yukariCik 2s ease;
 }
 
 .hero p {
-    font-size: 20px;
-    color: #666;
+  font-size: 30px;
+  color: #e4edea;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  animation: yukariCik 2s ease;
+}
+
+@keyframes yukariCik {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .buton {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 30px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 
@@ -85,7 +104,7 @@ nav a:hover {
   border-radius: 10px;
   padding: 25px;
   width: 280px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-top: 4px solid #3498db;
   transition: transform 0.2s;
 }
@@ -145,4 +164,24 @@ nav a:hover {
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+}
+
+/* HAKKIMDA */
+.hakkimda {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hakkimda h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.hakkimda p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
 }
